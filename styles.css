@@ -645,8 +645,7 @@ max-width: auto;
   height: 50%;
   position: center;
   overflow: hidden;
-  margin: 0;
-  padding: 0;
+  margin: auto;
   aspect-ratio: 16 / 9;
 }
 .contenedorQUI{
