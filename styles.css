@@ -953,6 +953,41 @@ position: absolute;
     height: auto !important;
   }
 }
+@media (max-width: 768px) {
+  .containermog {
+    flex-direction: column;
+    height: auto !important;
+  }
+
+  .lista-productos,
+  .galeria-imagenes {
+    width: 100%;
+  }
+
+  .galeria-imagenes img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .contact-formulario {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-formulario .columna {
+    width: 100%;
+  }
+
+  .containerC {
+    margin-top: 20px;
+  }
+
+  .mapa iframe {
+    width: 100% !important;
+    height: 250px !important;
+  }
+}
 
 
 
