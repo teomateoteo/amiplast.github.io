@@ -11,6 +11,8 @@
 }
 
 
+
+
 .banner-content {
   display: flex;
   align-items: center;
@@ -30,6 +32,7 @@
   overflow-y: auto;
   border-right: 2px solid #ccc;
 }
+
 
 .lista-productos h2 {
   color: #006400;
@@ -456,14 +459,14 @@ html {
 
 .container-imagen{
 position:relative;
-width: 200px
-height: 200px
+width: 200px;
+height: 200px;
 overflow:hidden;
 
 }
 .contenedor-imagen img{
-width: 100%
-height: 100%
+width: 100%;
+height: 100%;
 displat: block;
 object-fit:cover;
 }
@@ -484,7 +487,7 @@ object-fit:cover;
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 20px
+gap: 20px;
 }
 .centre{
 width: 50%;
@@ -689,7 +692,242 @@ position: absolute;
 /* Lado izquierdo - Lista de productos */
 
 
+@media (max-width: 768px) {
+  /* Ajusta contenedores de texto */
+  .containerQ,
+  .container1 {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8vh 5vw;
+  }
 
+  /* Reduce padding del fondo con imagen */
+  .prodfondo {
+    padding: 20px;
+    background-attachment: scroll; /* Parallax no funciona bien en móviles */
+  }
+
+  /* Encabezado más compacto */
+  header {
+    padding: 10px 0;
+  }
+
+  header h1 {
+    font-size: 24px;
+    padding: 0 10px;
+  }
+
+  /* Ajuste de acordeón */
+  .acordeon {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+  .acordeon-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* Menú vertical en móviles */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Asegura botones legibles */
+  button,
+  .acordeon-btn {
+    font-size: 16px;
+  }
+
+  /* Ajustes generales de espaciado */
+  .contenido {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+  @media (max-width: 768px) {
+  /* Layouts principales a columnas */
+  .containermog,
+  .contact-formulario {
+    flex-direction: column;
+  }
+
+  .lista-productos,
+  .galeria-imagenes,
+  .formulario-contacto,
+  .columna,
+  .container,
+  .container1,
+  .containerQ {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .pasarela-productos {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .producto {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .lineas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .acordeon {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .texto-centrado {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+
+  .centre {
+    width: 100%;
+    height: auto;
+  }
+
+  #botup {
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .productos-seccion {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .productos-texto h2 {
+    font-size: 20px;
+  }
+
+  .acordeon-contenido {
+    font-size: 18px;
+  }
+
+  .productos-imagen {
+    margin-top: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* Cambia el layout de horizontal a vertical */
+  .containermog {
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* Lista de productos ocupa todo el ancho */
+  .lista-productos {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #ccc;
+  }
+
+  /* Galería también ocupa todo el ancho */
+  .galeria-imagenes {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* El contenido del banner se apila */
+  .banner-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Menú más espaciado en vertical */
+  .menu a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* Formulario en una sola columna */
+  .contact-formulario {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .formulario-contacto,
+  .columna {
+    width: 100%;
+  }
+
+  /* Texto más pequeño para móviles */
+  .lista-productos ul {
+    font-size: 20px;
+  }
+
+  label, input, textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+}
+  @media (max-width: 768px) {
+  .contenedorQUI {
+    padding: 15px;
+    margin: 20px 10px;
+    max-width: 100%;
+  }
+
+  .texto-superpuesto h2 {
+    font-size: 1.2em;
+  }
+
+  .texto-superpuesto p {
+    font-size: 0.9em;
+  }
+}
 
 
 
