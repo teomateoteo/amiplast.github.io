@@ -935,6 +935,25 @@ position: absolute;
 }
 
 
+@media (max-width: 768px) {
+  .containermog {
+    height: auto !important;
+    flex-direction: column; /* que se adapte mejor verticalmente */
+  }
+}
+  @media (max-width: 768px) {
+  .video-container {
+    width: 100% !important;
+    aspect-ratio: 16 / 9;
+    height: auto !important;
+  }
+
+  .video-container video {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
 
 
 
