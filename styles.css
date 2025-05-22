@@ -21,7 +21,7 @@
   flex-direction: row;
   height: 100vh;
 }
-
+/* Lado izquierdo - Lista de productos */
 /* Lado izquierdo - Lista de productos */
 .lista-productos {
   width: 40%;
