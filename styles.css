@@ -136,7 +136,7 @@ form {
 .mapa {
  flex: 1;
   width: 50%;
-  max-width: 800px;
+  max-width: 1000px;
   height:auto;
   margin: 0 auto;
   
