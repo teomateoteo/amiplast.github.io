@@ -135,9 +135,9 @@ form {
 }
 .mapa {
  flex: 1;
-  width: auto;
+  width: 70%;
   max-width: 1000px;
-  height:auto;
+  height: 70%;
   margin: 0 auto;
   
 }
