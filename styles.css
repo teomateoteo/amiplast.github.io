@@ -113,12 +113,13 @@ button:hover {
   padding: 20px;
 }
 form {
-  width: 320px;
+  width: 100%px;
   margin: right;
   padding: 20px;
   border-radius: 10px;
   background-color: #fff;
   font-family: sans-serif;
+  height: 500px;
 }
 .contact-formulario {
   display: flex;
