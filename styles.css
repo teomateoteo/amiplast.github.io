@@ -1,4 +1,4 @@
-
+ed
 /* RESET */
 * {
   box-sizing: border-box;
@@ -135,7 +135,7 @@ form {
 }
 .mapa {
  flex: 1;
-  width: 50%;
+  width: auto;
   max-width: 1000px;
   height:auto;
   margin: 0 auto;
