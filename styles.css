@@ -136,6 +136,10 @@ form {
 .mapa {
  flex: 1;
   width: 50%;
+  max-width: 500px;
+  height:auto;
+  margin: 0 auto;
+  
 }
 
 .columna {
