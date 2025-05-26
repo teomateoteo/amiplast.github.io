@@ -94,6 +94,9 @@
   margin-top: 20px;
   color: #2c3e50;
 }
+.galeria-imagenes {
+    width: 60%;
+  }
 
 .lista-productos ul {
   padding-left: 1.5rem;
@@ -115,12 +118,7 @@ height: auto;
   
 
 
-@media (min-width: 768px) {
-  .galeria-imagenes img {
-    width: 100%;
-    align-items: flex-start;
-  }
-}
+
 
 
 
