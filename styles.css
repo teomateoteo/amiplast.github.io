@@ -31,35 +31,13 @@ ed
   margin-bottom: 0.5rem;
 }
 
-.galeria-imagenes {
-  margin-top: 1rem;
-}
 
-.galeria-imagenes img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
+
+
 
 /* Diseño para pantallas grandes (>= 768px) */
-@media (min-width: 768px) {
-  .seccion-productos .contenedor {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 2rem;
-  }
 
-  .lista-productos {
-    width: 35%;
-    font-size: 1rem; /* Tamaño normal */
-  }
 
-  .galeria-imagenes {
-    width: 65%;
-    margin-top: 0;
-  }
-}
 
 
 
@@ -92,9 +70,10 @@ ed
 /* Lado izquierdo - Lista de productos */
 .lista-productos {
   max-width: 100%;
+  max-height: none;
   background-color: #f4f4f4;
   padding: 1rem;
-  overflow-y: auto;
+  overflow: visible;
   border-right: 2px solid #ccc;
   font-size: 1rem;
   overflow-wrap: break-word;
@@ -132,14 +111,15 @@ ed
 
 /* Lado derecho - Imágenes */
 .galeria-imagenes {
-  width: auto;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  overflow: hidden;
+ width: 100%;
+  margin-top: 1rem;
+  .galeria-imagenes img{
+width: 100%;
+height: auto;
+    object-fit: cover;
+    display: block;
+}
+  
 }
 @media (min-width: 768px) {
   .galeria-imagenes {
@@ -148,12 +128,7 @@ ed
   }
 }
 
-.galeria-imagenes img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
+
 
 .logo {
   height: 75px; /* Ajusta según el tamaño del logo */
