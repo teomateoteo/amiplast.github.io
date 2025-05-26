@@ -739,11 +739,7 @@ border: px solid #a8e6a2;      /* Verde claro */
   text-align: center;
   line-height: 1.6;
 }
-.containermog {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
+
 .texto-superpuesto {
 top: 50%;
 left: 50%;
@@ -1005,6 +1001,20 @@ position: absolute;
 
   .texto-superpuesto p {
     font-size: 0.9em;
+  }
+}
+@media (max-width: 768px) {
+  .video-logo-container {
+    flex-direction: column; /* Vertical en móvil */
+  }
+
+  .logo-container img {
+    width: 100px;
+    margin: 1rem auto;
+  }
+
+  .video-container {
+    max-width: 100%;
   }
 }
 
