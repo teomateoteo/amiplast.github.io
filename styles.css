@@ -35,21 +35,6 @@
 
 
 
-@media (max-width: 768px) {
-  .containermeg, .contenidomeg, .containerQ, .contenidop, .galeria-imagenes {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
-
-  .galeria-imagenes img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
-}
 
 
 
@@ -118,15 +103,7 @@
 }
 
 /* Lado derecho - Imágenes */
-.galeria-imagenes {
- width: 100%;
-  margin-top: 1rem;
-  .galeria-imagenes img{
-width: 100%;
-height: auto;
-    object-fit: cover;
-    display: block;
-}
+
 
   
 
