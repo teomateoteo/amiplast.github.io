@@ -26,11 +26,13 @@ ed
 /* Lado izquierdo - Lista de productos */
 /* Lado izquierdo - Lista de productos */
 .lista-productos {
-  width: 40%;
+  max-width: 100%;
   background-color: #f4f4f4;
-  padding: 20px;
+  padding: 1rem;
   overflow-y: auto;
   border-right: 2px solid #ccc;
+  font-size: 1rem;
+  overflow-wrap: break-word;
 }
 
 
@@ -53,13 +55,20 @@ ed
 
 /* Lado derecho - Imágenes */
 .galeria-imagenes {
-  width: 60%;
+  width: auto;
   background-color: #ffffff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 1rem;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .galeria-imagenes {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .galeria-imagenes img {
