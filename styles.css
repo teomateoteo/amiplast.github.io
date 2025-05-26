@@ -35,11 +35,24 @@
 
 
 
-
-
-.galeria-imagenes {
-    width: 60%;
+@media (max-width: 768px) {
+  .containermeg, .contenidomeg, .containerQ, .contenidop, .galeria-imagenes {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
   }
+
+  .galeria-imagenes img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+
+
 
 .banner-content {
   display: flex;
