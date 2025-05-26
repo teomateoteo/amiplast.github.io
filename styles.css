@@ -9,6 +9,58 @@ ed
   background-color: #ffffff; /* Verde oscuro */
   padding: 10px 20px;
 }
+/* Diseño base para móviles */
+.seccion-productos .contenedor {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.lista-productos {
+  background: #f3f3f3;
+  padding: 1rem;
+  font-size: 0.9rem; /* Más pequeño en móviles */
+}
+
+.lista-productos ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.lista-productos li {
+  margin-bottom: 0.5rem;
+}
+
+.galeria-imagenes {
+  margin-top: 1rem;
+}
+
+.galeria-imagenes img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Diseño para pantallas grandes (>= 768px) */
+@media (min-width: 768px) {
+  .seccion-productos .contenedor {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .lista-productos {
+    width: 35%;
+    font-size: 1rem; /* Tamaño normal */
+  }
+
+  .galeria-imagenes {
+    width: 65%;
+    margin-top: 0;
+  }
+}
+
 
 
 
