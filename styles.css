@@ -47,6 +47,19 @@ ed
   font-size: 1rem;
   overflow-wrap: break-word;
 }
+@media (min-width: 768px) {
+  .containermog {
+    flex-direction: row;
+  }
+
+  .lista-productos {
+    width: 35%;
+  }
+
+  .galeria-imagenes {
+    width: 65%;
+  }
+}
 
 
 .lista-productos h2 {
