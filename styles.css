@@ -1,4 +1,4 @@
-ed
+
 /* RESET */
 * {
   box-sizing: border-box;
@@ -37,7 +37,9 @@ ed
 
 
 
-
+.galeria-imagenes {
+    width: 60%;
+  }
 
 .banner-content {
   display: flex;
