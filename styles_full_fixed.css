@@ -33,7 +33,7 @@
 
 .containermog {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: stretch;
   gap: 1rem;
   padding: 1rem;
@@ -96,7 +96,7 @@
 }
 
 .galeria-imagenes {
-  width: 100%;
+  width: 50%;
   margin-top: 1rem;
 }
 
@@ -184,7 +184,7 @@ form {
   border-radius: 10px;
   background-color: #fff;
   font-family: sans-serif;
-  height: 500px;
+  
 }
 .contact-formulario {
   display: flex;
