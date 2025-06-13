@@ -718,6 +718,13 @@ max-width: auto;
    width: 100%; /* Aumenta según lo necesites */
     height: auto;
     transition: transform 0.3s ease;
+}@media (min-width: 768px) {
+ .seccion-video{
+display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column-reverse;
+  }
 }
 .seccion-video{
 display:flex;
